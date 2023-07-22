@@ -50,6 +50,8 @@ body {
     object-fit: cover;
 }
   
+/** Barra navegacion **/
+
 :root {
     --blanco:#ffffff;
     --negro: #000000;
@@ -65,8 +67,8 @@ body {
 }
 
 .navigator-bar{
-    background-color: transparent
-}
+    background-color: transparent;
+    }
 
 .navigator-bar {
     display: flex;
@@ -85,11 +87,9 @@ body {
 
     color: var(--negro);
     text-decoration: none;
-    font-size: 1.2rem;            /** 1rem 0 10px **/
+    font-size: 1rem;            /** 1rem 0 10px **/
     font-weight: 500;
-    padding: 1rem;
-    cursor: pointer;
-
+    padding: 1rem 2rem;
 }
 
 .navigator-bar a:hover {           /**Usamos para crear el boton que cambia de color**/
@@ -101,6 +101,4 @@ body {
 
 .button-selection {
     font-family: 'Kanit', sans-serif;
-    transition: height 2s;
-    height: 3.5rem;
 }
