@@ -1,37 +1,44 @@
 body {
     background-color: #f5f5f5;
-    font-family: 'Kenit', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
     line-height: 1.5;
     color: #021639;
     text-align: left;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-size: 1.2rem;            /** 1rem 0 10px **/
+    font-weight: 500;
 }
 
+/* Esto es la parte que tiene el texto y la imagen abajo del HUD*/
 .main {
-    margin: auto;
-    /*align items horizontally*/
+    margin-top: 30px;
+    margin-left: 10%;
+    /*align everything to center*/
+    align-items: center;
+    /*Alineo los elementos de forma horizontal*/
     display: flex;
-    /*spread objects*/
+    /*los separo un poquito*/
     justify-content: space-around;    
 }
 
 .btn {
-    background-color: #021639;
+    background-color: rgba(215, 35, 35, 0.7);
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Kanit', sans-serif;
     font-size: 16px;
+    transition: 0.3s;
+    border-radius: 0.4rem;
 }
 
 .btn:hover {
-    background-color: #f5f5f5;
+    background-color: rgba(215, 35, 35, 0.3);
     color: #021639;
     border: 1px solid #021639;
 }
