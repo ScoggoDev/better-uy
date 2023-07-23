@@ -48,7 +48,7 @@ body {
     object-fit: cover;
 }
   
-/** Barra navegacion **/
+/** Diseno de Barra navegacion **/
 
 :root {
     --blanco:#ffffff;
@@ -64,34 +64,24 @@ body {
     margin: 0 auto;
 }
 
-.navigator-bar{
-    background-color: transparent;
-    }
 
 .navigator-bar {
     display: flex;
     justify-content: space-evenly;
+    background-color: transparent;
 }
 
-@media (min-width: 768px) {
-
-    .navigator-bar{
-        flex-direction: row;
-    }
-    
-}
 
 .navigator-bar a {               /** Cambia de color la la barra de navegadores **/
-
     color: var(--negro);
     text-decoration: none;
     font-size: 1rem;            /** 1rem 0 10px **/
     font-weight: 500;
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
 }
 
 .navigator-bar a:hover {           /**Usamos para crear el boton que cambia de color**/
-    background-color:rgba(215, 35, 35, 0.3);
+    background-color:rgba(215, 35, 35, 0.1);
     color: var(--negro);
     border-radius: 0.4rem;  
 
@@ -100,3 +90,17 @@ body {
 .button-selection {
     font-family: 'Kanit', sans-serif;
 }
+
+.logotipo {
+width: 4rem;
+margin-left: 2rem;
+
+}
+
+/**Barra debajo del HUD**/ 
+
+hr {
+    height: 1%;
+    width: 100%;
+    background-color: black;
+  }
