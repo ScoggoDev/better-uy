@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -119,8 +120,6 @@ h2 {
     height: 50%;
 }
   
-/** Diseno de Barra navegacion **/
-
 :root {
     --blanco:#ffffff;
     --negro: #000000;
@@ -147,7 +146,7 @@ h2 {
     border-radius: 6px;
 }
 
-  /** DISENO MENU HAMBURGUESA **/
+  /** DISENO MENU HAMBURGUESA y Barra de navegacion **/
 
   header {
     position: -webkit-sticky;
@@ -168,6 +167,7 @@ h2 {
     list-style-type: none;
     display: flex;
     gap: 1rem;
+    margin-right: 30rem;
 }
 
 .nav-list a {               /** Cambia de color la la barra de navegadores **/
@@ -176,13 +176,13 @@ h2 {
     font-size: 1rem;            /** 1rem 0 10px **/
     font-weight: 500;
     padding: 0.7rem 2rem;
+    
 }
 
 .nav-list li a:hover {           /**Usamos para crear el boton que cambia de color**/
     background-color:rgba(215, 35, 35, 0.1);
     color: var(--negro);
-    border-radius: 0.4rem;  
-
+    border-radius: 0.4rem; 
 }
 
 .abrir-menu,
@@ -218,11 +218,14 @@ h2 {
         position: absolute;
         top: 0;
         right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
+        background-color: rgba(0, 0, 0, 0.8);
         padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+        border-bottom-left-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+        
+        
+}
 
     .nav.visible {
         opacity: 1;
@@ -232,9 +235,59 @@ h2 {
     .nav-list {
         flex-direction: column;
         align-items: end;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .nav-list li a {
         color: #ecececec;
+    
     }
 }
+
+/** diseno Footer **/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #D5E2F3;
+}
+
+.pie-pagina .grupo-1 {    /* Tamano del footer y columnas del grid */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    padding: 1rem 0rem;
+}
+
+.pie-pagina .grupo-1 .box figure{    /** Logo en footer **/
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pie-pagina .grupo-1 .box figure img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: var(--negro);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: var(--obscuro);
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 1rem;
+}
+
