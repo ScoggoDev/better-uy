@@ -32,15 +32,13 @@ body {
     text-decoration: none;
     display: inline-block;
     font-family: 'Kanit', sans-serif;
-    font-size: 16px;
     transition: 0.3s;
     border-radius: 0.4rem;
 }
 
 .btn:hover {
     background-color: rgba(215, 35, 35, 0.3);
-    color: #021639;
-    border: 1px solid #021639;
+    color: #000000;
 }
 
 .image {
