@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*body {
+body {
     background-color: #f5f5f5;
     font-family: 'Kanit', sans-serif;
     line-height: 1.5;
@@ -14,7 +14,7 @@
     overflow-x: hidden;
     font-size: 1.2rem;            
     font-weight: 500;
-}*/
+}
 
 
 .marcas {
@@ -35,7 +35,7 @@ h2 {
 }
 
 .row-marcas {
-    width: 60rem;
+    width: 70rem;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -107,21 +107,6 @@ h2 {
     max-width: 5rem;
 }
 
-.navigator-bar a {               /** Cambia de color la la barra de navegadores **/
-    color: var(--negro);
-    text-decoration: none;
-    font-size: 1rem;            /** 1rem 0 10px **/
-    font-weight: 500;
-    padding: 0.7rem 2rem;
-}
-
-.navigator-bar a:hover {           /**Usamos para crear el boton que cambia de color**/
-    background-color:rgba(215, 35, 35, 0.1);
-    color: var(--negro);
-    border-radius: 0.4rem;  
-
-}
-
 /**Barra debajo del HUD**/ 
 
 
@@ -155,13 +140,23 @@ padding: 2rem;
     gap: 1rem;
 }
 
-.nav-list li a {
-    text-decoration: none;
-    color: #021639;
-}
-
 .abrir-menu {
     display: none;
+}
+
+.nav-list a {               /** Cambia de color la la barra de navegadores **/
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1rem;            /** 1rem 0 10px **/
+    font-weight: 500;
+    padding: 0.7rem 2rem;
+}
+
+.nav-list li a:hover {           /**Usamos para crear el boton que cambia de color**/
+    background-color:rgba(215, 35, 35, 0.1);
+    color: var(--negro);
+    border-radius: 0.4rem;  
+
 }
 
 
@@ -176,7 +171,7 @@ padding: 2rem;
         display: none;
     }
 
-    /** .nav {
+     .nav {
             display: flex;
             flex-direction: column;
             align-items: end;
@@ -189,9 +184,8 @@ padding: 2rem;
             bottom: 60;
             z-index: 1;
         }
-        **/
-
-    .nav a {
+        
+        .nav a {
         color: var(--blanco);
     }
 
