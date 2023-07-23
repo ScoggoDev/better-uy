@@ -166,16 +166,17 @@ margin-left: 3.5rem;
 
   /** DISENO MENU HAMBURGUESA **/
 
-  .abrir-menu, .cerrar-menu{
+  .abrir-menu{
     display: none;
   }
 
+
+
   @media screen and (max-width: 768px){
 
-    .abrir-menu {
+    .abrir-menu{
         display: block;
     }
-
       
     .button-selection {
         display: flex;
