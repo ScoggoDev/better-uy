@@ -14,16 +14,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="navigator-bar">
-        <img class="logotipo" width="100" src="assets/better.png" alt="better">
-        <nav class="button-selection container">                 
-            <a class="button" href="#"> Inicio </a>
-            <a class="button" href="#"> Nosotros </a>
-            <a class="button" href="#"> Productos </a>
-            <a class="button" href="#"> Contacto </a>
-            <hr>
-        </nav>
-    </div>
+ <header>
+        <img class="logotipo" width="100" src="assets/better.png">
+    
+        <button class="abrir-menu">
+
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+
+        </button>
+
+        <div class="navigator-bar">
+            
+            <nav class="button-selection container cerrar-menu visible" id="nav"> 
+                
+                <button id="cerrar ">cerrar</button>
+                
+                <ul class="nav-list">
+
+                    <a class="button" href="#"> Inicio </a>
+                    <a class="button" href="#"> Nosotros </a>
+                    <a class="button" href="#"> Productos </a>
+                    <a class="button" href="#"> Contacto </a>
+                    
+
+                </ul>
+            
+            </nav>
+            
+    
+        </div>
+    </header>
+    
+
+
     <!-- Main view, text at left, image on right -->
     <section class="container">
         <div class="slider-wrapper">

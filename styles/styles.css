@@ -58,18 +58,19 @@ body {
 
 }
 
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-
 .navigator-bar {
     display: flex;
     justify-content: space-evenly;
     background-color: transparent;
-}
+    border-bottom: 2px solid #021639;
 
+}
 
 .navigator-bar a {               /** Cambia de color la la barra de navegadores **/
     color: var(--negro);
@@ -90,22 +91,29 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
+.button-selection {
+    list-style-type: none;
+    display: flex;
+}
+
+/** Diseno del logotipo **/
+
+header {
+    display:flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
 .logotipo {
 width: 4rem;
-margin-left: 2rem;
-
+margin-left: 3.5rem;
 }
 
 /**Barra debajo del HUD**/ 
 
-hr {
-    height: 1%;
-    width: 100%;
-    background-color: black;
-}
 
 .container {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .slider {
@@ -131,7 +139,7 @@ hr {
     bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 0;
 }
 
 .slider-nav a {
@@ -154,3 +162,56 @@ hr {
     margin: auto;
 
 }
+  
+
+  /** DISENO MENU HAMBURGUESA **/
+
+  .abrir-menu, .cerrar-menu{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px){
+
+    .abrir-menu {
+        display: block;
+    }
+
+      
+    .button-selection {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        bottom: 50;
+        z-index: 1;
+
+    }
+
+    hr {
+        height: 0%;
+        width: 0%;
+    }
+
+    .button-selection a {
+        color: var(--blanco);
+        
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      
+
+    }
+.nav-list .visible {
+    opacity:    1;
+    visibility: visible;
+}
+
+  }
