@@ -231,7 +231,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0rem 2rem;
-    background-color: #ececec;
+    background-color: rgba(236, 236, 236, 1);
     z-index: 2;
 }
 
@@ -243,7 +243,8 @@ button:hover {
     list-style-type: none;
     display: flex;
     gap: 1rem;
-    margin-right: 30rem;
+    margin-right:auto;
+    margin-left:auto ;
 }
 
 .nav-list a {               /** Cambia de color la la barra de navegadores **/
@@ -361,8 +362,8 @@ button:hover {
 
 .pie-pagina .grupo-1 {    /* Tamano del footer y columnas del grid */
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 3000px;
+    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
@@ -377,16 +378,21 @@ button:hover {
     align-items: center;
     
 }
+
+@media (min-width:  768px) {
+
+
 .pie-pagina .grupo-1 .box figure img {
     width: 6rem;
     height: 6rem;
+    margin-left: 30rem;
 }
 
 .pie-pagina .grupo-1 .box h2 {
     color: var(--negro);
     margin-bottom: 25px;
-    margin-right: 10px;
-    margin-left: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
@@ -407,6 +413,7 @@ button:hover {
     margin-bottom: 10px;
     margin-left: 5rem;
     font-size: 1rem;
+}
 }
 
 .pie-pagina .grupo-1 .red-social a {
