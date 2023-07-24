@@ -26,6 +26,7 @@ body {
     color: #f5f5f5;
     top: 0;
     border-top: 1px solid black;
+    text-align: center;
 }
 
 /* Esto es la parte que tiene el texto y la imagen abajo del HUD*/
