@@ -48,14 +48,14 @@ body {
 
 .col-1 h3 {
     font-size: 30px;
-    color: #707070;
+    color: #021639;
     font-weight: 100;
     margin: 0px 0 10px;
 }
 
 .col-1 p {
     font-size: 16px;
-    color: #b7b7b7;
+    color: #707070;
     font-weight: 100;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .col-2 .main-image {
-     width: 50%;
+    width: 50%;
 }
 
 .color-box {
@@ -105,9 +105,24 @@ body {
     text-align: center;
     color: #f5f5f5;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 10%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #f5f5f5;
+    transition: 0.3s;
 }
 
+.catalogue:hover {
+    text-align: center;
+    color: #f5f5f5;
+    cursor: pointer;
+    margin-left: 10%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
 
 .row-marcas {
     width: 70%;
@@ -272,6 +287,24 @@ button:hover {
     .row {
         flex-direction: column-reverse;
         margin: 50px 0;
+    }
+
+    .catalogue {
+        text-align: center;
+        color: #f5f5f5;
+        cursor: pointer;
+        margin-left: 20px;
+        border-radius: 50%;
+        background: #f5f5f5;
+    }
+
+    .catalogue:hover {
+        text-align: center;
+        color: #f5f5f5;
+        cursor: pointer;
+        margin-left: 20px;
+        border-radius: 50%;
+        background-color: grey;
     }
 
     .col-2 {
