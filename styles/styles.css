@@ -22,8 +22,6 @@ body {
     font-family: 'Kanit', sans-serif;
     font-size: 1.2rem;            /** 1rem 0 10px **/
     font-weight: 500;
-    background: linear-gradient(#e25348, rgba(215, 35, 35, 0.4));
-  
     background-image: linear-gradient(to left, rgba(2, 22, 57, 0.6), #233142);
     color: #f5f5f5;
     top: 0;
