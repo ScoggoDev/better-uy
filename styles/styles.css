@@ -105,15 +105,19 @@ body {
 
 .catalogue {
     text-align: center;
-    color: #f5f5f5;
+    color: #021639;
     cursor: pointer;
     margin-left: 10%;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #f5f5f5;
     transition: 0.3s;
     border:2px solid #fa8072;
+}
+
+.catalogue svg {
+    margin-top: 10%;
 }
 
 .catalogue:hover {
@@ -122,8 +126,8 @@ body {
     cursor: pointer;
     margin-left: 10%;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background: linear-gradient(rgba(215, 35, 35, 0.5), #e25348);
 }
 
@@ -296,11 +300,15 @@ button:hover {
 
     .catalogue {
         text-align: center;
-        color: #f5f5f5;
+        color: #021639;
         cursor: pointer;
         margin-left: 20px;
         border-radius: 50%;
         background: #f5f5f5;
+    }
+
+    .catalogue svg {
+        margin-top: 10%;
     }
 
     .catalogue:hover {
