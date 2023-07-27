@@ -6,6 +6,7 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: #f5f5f5;
     font-family: 'Kanit', sans-serif;
     line-height: 1.5;
@@ -460,21 +461,6 @@ button:hover {
 }
 }
 
-.instagram {
-    display:inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    margin-left: 20px;
-    color: var(--negro);
-    line-height: 55px;
-    background-color: #f5f5f5;
-    border-radius: 2rem;
-    text-align: center;
-    transition: all 300ms ease;
-
-} 
-
 .whatsapp {
     display:inline-block;
     text-decoration: none;
@@ -486,14 +472,29 @@ button:hover {
     background-color: #f5f5f5;
     border-radius: 2rem;
     text-align: center;
-    transition: all 300ms ease;
+    transition: 300ms ease;
 }
 
 .whatsapp:hover{
     color: #00bb2d;
 }
 
- .instagram :hover {
+.instagram {
+    display:inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    color: var(--negro);
+    line-height: 55px;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 300ms ease;
+
+}
+
+ .instagram:hover {
     color: #F85CD4;
 }
 
@@ -504,3 +505,60 @@ button:hover {
     color:var(--blanco);
 }
 
+/** Inicio producto destacados **/
+
+.color-product {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5px;
+    background-color: #021639;
+    color: var(--blanco);
+}
+
+.slider-frame {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    border-top: 1px solid var(--grisobscuro);
+	width: 100%;
+    height: auto;
+	overflow: hidden;
+    background-color: var(--blanco);
+
+
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 600%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 50%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* Cierre productos destacados */
