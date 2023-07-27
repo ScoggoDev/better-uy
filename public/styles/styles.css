@@ -69,7 +69,6 @@ body {
     content: '';
     width: 10px;
     height: 57%;
-    
     background: linear-gradient( #0A6EBD, #A1C2F1 );
     position: absolute;
     left: -40px;
@@ -97,6 +96,9 @@ body {
     width: 80%;
     z-index: -1;
 }
+
+@media screen and (min-width:  768px) {
+    
 
 .catalogue img {
     width: 10px;
@@ -130,6 +132,7 @@ body {
     height: 120px;
     background-color:rgba(10, 110, 189, 0.8);
 }
+
 
 .row-marcas {
     width: 70%;
@@ -183,7 +186,7 @@ body {
     clear: both;
   }
   
-
+}
 
 .button {
     width: 140px;
@@ -191,7 +194,7 @@ body {
     padding: 12px 10px;
     outline: none;
     color: #f5f5f5;
-    background: linear-gradient(rgba(2,22,57,0.8), #0A6EBD);
+    background-color: #1D5D9B;
     border-radius: 6px;
     cursor: pointer;
     transition: width 0.5s;
@@ -245,6 +248,7 @@ button:hover {
     border-radius: 6px;
 }
 
+
   /** DISENO MENU HAMBURGUESA y Barra de navegacion **/
 
   header {
@@ -292,6 +296,7 @@ button:hover {
     display: none;
 }
 
+
 @media screen and (max-width: 768px) {
 
     .row {
@@ -334,6 +339,11 @@ button:hover {
 
     .color-box {
         transform: translateX(75px);
+        width: 80%;
+        right: 80px;
+        border-top-left-radius:30% ;
+        border-bottom-left-radius:30% ;
+
     }
 
     .col-1 {
@@ -462,7 +472,7 @@ button:hover {
     margin-left: 5rem;
     font-size: 1rem;
 }
-}
+
 
 .whatsapp {
     display:inline-block;
@@ -502,20 +512,23 @@ button:hover {
 }
 
 .pie-pagina .grupo-2 {
-    background-color: #495D76;
+    background-color: #365b77;
     padding: 5px 10px;
     text-align: center;
     color:var(--blanco);
+}
+
 }
 
 /** Inicio producto destacados **/
 
 .color-product {
     text-align: center;
-    font-size: 2rem;
-    padding-top: 5px;
-    background-color: #0A6EBD;
+    font-size: 1.5rem;
+    background-color: #012e46;
     color: var(--blanco);
+    text-transform: uppercase;
+    
 }
 
 .slider-frame {
