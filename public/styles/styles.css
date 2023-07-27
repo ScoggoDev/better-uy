@@ -69,7 +69,8 @@ body {
     content: '';
     width: 10px;
     height: 57%;
-    background: linear-gradient(#e25348, rgba(215, 35, 35,0.1));
+    
+    background: linear-gradient( #0A6EBD, #A1C2F1 );
     position: absolute;
     left: -40px;
     top: 8px;
@@ -90,7 +91,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    background: linear-gradient(rgba(215, 35, 35, 0.5), #e25348);
+    background: linear-gradient(rgba(2,22,57,0.9), #0A6EBD);
     border-radius: 40px 0 0 40px;
     height: 100%;
     width: 80%;
@@ -112,7 +113,7 @@ body {
     height: 120px;
     background-color: #f5f5f5;
     transition: 0.3s;
-    border:2px solid #fa8072;
+    border:1px solid #0A6EBD;
 }
 
 .catalogue svg {
@@ -127,7 +128,7 @@ body {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    background: linear-gradient(rgba(215, 35, 35, 0.5), #e25348);
+    background-color:rgba(10, 110, 189, 0.8);
 }
 
 .row-marcas {
@@ -190,7 +191,7 @@ body {
     padding: 12px 10px;
     outline: none;
     color: #f5f5f5;
-    background: linear-gradient(#e25348, rgba(215, 35, 35, 0.4));
+    background: linear-gradient(rgba(2,22,57,0.8), #0A6EBD);
     border-radius: 6px;
     cursor: pointer;
     transition: width 0.5s;
@@ -317,7 +318,7 @@ button:hover {
         cursor: pointer;
         margin-left: 20px;
         border-radius: 50%;
-        background-color: grey;
+        background-color:rgba(10, 110, 189, 0.8);
     }
 
     .col-2 {
@@ -513,7 +514,7 @@ button:hover {
     text-align: center;
     font-size: 2rem;
     padding-top: 5px;
-    background-color: #021639;
+    background-color: #0A6EBD;
     color: var(--blanco);
 }
 
@@ -547,6 +548,7 @@ button:hover {
 
 .slider-frame img {
 	width: 50%;
+    height: 100%;
 }
 
 @keyframes slide {
