@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.5;
+    color: #021639;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.2rem;            
+    font-weight: 500;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*Make stretcher*/
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner-area {
+    background-image: url(../assets/banner.png);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner-area:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-area h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-area h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-area p {
+    color: #021639;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    border-radius: 6px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
