@@ -100,43 +100,6 @@ body {
 
 /*BOTON CATALOGO*/
 
-@media screen and (max-width:  768px) {
-    
-.catalogue img {
-    width: 10px;
-    margin-bottom: 10px;
-}
-
-.catalogue {
-    text-align: center;
-    color: #021639;
-    cursor: pointer;
-    border-radius: 50%;
-    margin-left: 10%;
-    width: 120px;
-    height: 120px;
-    background-color: #f5f5f5;
-    transition: 0.3s;
-    border:1px solid #0A6EBD;
-}
-
-.catalogue svg {
-    margin-top: 10%;
-}
-
-.catalogue:hover {
-    text-align: center;
-    color: #f5f5f5;
-    cursor: pointer;
-    margin-left: 10%;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    background-color:rgba(10, 110, 189, 0.8);
-}
-
-}  /*Cierre media queri */
-
 .catalogue img {
     width: 10px;
     margin-bottom: 10px;
@@ -464,8 +427,41 @@ button:hover {
     }
 }
 
-/** diseno Footer **/
+/** DISENO FOOTER Y BOTON CATALOGO **/
 @media (max-width:  768px) {
+
+    .catalogue img {
+    width: 10px;
+    margin-bottom: 10px;
+}
+
+.catalogue {
+    text-align: center;
+    color: #000000;
+    margin-left: 2%;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #f5f5f5;
+    transition: 0.3s;
+    border:1px solid #0A6EBD;
+}
+
+.catalogue svg {
+    margin-top: 10%;
+}
+
+.catalogue:hover {
+    text-align: center;
+    color: #f5f5f5;
+    cursor: pointer;
+    margin-left: 0%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color:rgba(10, 110, 189, 0.8);
+}
 
 .pie-pagina{
     width: 100%;
@@ -673,6 +669,7 @@ button:hover {
     color:var(--blanco);
 }
 
+/* CIERRA PIE DE PAGINA Y BOTON CATALOGO */
 
 /** Inicio producto destacados **/
 
