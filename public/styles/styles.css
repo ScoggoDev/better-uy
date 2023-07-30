@@ -23,7 +23,7 @@ body {
     font-family: 'Kanit', sans-serif;
     font-size: 1.2rem;            /** 1rem 0 10px **/
     font-weight: 500;
-    background-image: linear-gradient( #15297c, rgba(0, 10, 35, 0.8));
+    background-image: linear-gradient( #012e46, rgba(0, 0, 0, 0.8));
     color: #f5f5f5;
     top: 0;
     border-top: 1px solid black;
@@ -171,6 +171,19 @@ body {
 * {
     box-sizing: border-box;
   }
+
+  .column {
+    float: left;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
 
 @media screen and (max-width:  768px) {
@@ -314,7 +327,7 @@ button:hover {
     margin-left:auto ;
 }
 
-.nav-list a {               /** Cambia de color la la barra de navegadores **/
+.nav-list a {              
     color: var(--negro);
     text-decoration: none;
     font-size: 1rem;            /** 1rem 0 10px **/
@@ -323,7 +336,7 @@ button:hover {
     
 }
 
-.nav-list li a:hover {           /**Usamos para crear el boton que cambia de color**/
+.nav-list li a:hover {          
     background-color:rgba(10, 110, 189, 0.5);
     color: var(--negro);
     border-radius: 0.4rem; 
@@ -468,101 +481,83 @@ button:hover {
     background-color: #D5E2F3;
 }
 
-.pie-pagina .grupo-1 {    /* Tamano del footer y columnas del grid */
-    width: 100%;
-    max-width: 3000px;
-    margin-left: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-    padding: 1rem 0rem;
-}
-
-.pie-pagina .grupo-1 .box figure{    /** Logo en footer **/
-    width: 6rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 .pie-pagina .grupo-1 .box figure img {
-    width: 6rem;
-    height: 6rem;
-    margin-left: 10rem;
+width: 6rem;
+height: 6rem;
+margin-right: 6rem;
 }
 
 .pie-pagina .grupo-1 .box h2 {
-    color: var(--negro);
-    margin-bottom: 25px;
-    margin-right: 20px;
-    margin-left: 10px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: center;
+color: var(--negro);
+margin-bottom: 25px;
+margin-right: 20px;
+margin-left: 10px;
+font-size: 1rem;
+text-transform: uppercase;
+text-align: center;
 
 }
 .pie-pagina .grupo-1 .box h3 {
-    color: var(--negro);
-    margin-bottom: 25px;
-    margin-right: 10x;
-    margin-left: 40px;
-    font-size: 1rem;
-    text-transform: uppercase;
+color: var(--negro);
+margin-bottom: 30px;
+margin-right: 0;
+margin-left: 0;
+font-size: 1rem;
+text-transform: uppercase;
 
 }
 
 .pie-pagina .grupo-1 .box p {
-    color: var(--obscuro);
-    margin-bottom: 10px;
-    margin-left: 2rem;
-    font-size: 1rem;
+color: var(--obscuro);
+margin-bottom: 10px;
+margin-right:10px;
+font-size: 1rem;
 }
 
 
 .whatsapp {
-    display:inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    margin-left: 20px;
-    color: var(--negro);
-    line-height: 55px;
-    background-color: #f5f5f5;
-    border-radius: 2rem;
-    text-align: center;
-    transition: 300ms ease;
+display:inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+margin-left: 20px;
+color: var(--negro);
+line-height: 55px;
+background-color: #f5f5f5;
+border-radius: 2rem;
+text-align: center;
+transition: 300ms ease;
 }
 
 .whatsapp:hover{
-    color: #00bb2d;
+color: #00bb2d;
 }
 
 .instagram {
-    display:inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    margin-left: 20px;
-    color: var(--negro);
-    line-height: 55px;
-    background-color: #f5f5f5;
-    border-radius: 2rem;
-    text-align: center;
-    transition: 300ms ease;
+display:inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+margin-left: 20px;
+color: var(--negro);
+line-height: 55px;
+background-color: #f5f5f5;
+border-radius: 2rem;
+text-align: center;
+transition: 300ms ease;
 
 }
 
- .instagram:hover {
-    color: #F85CD4;
+.instagram:hover {
+color: #F85CD4;
 }
 
 .pie-pagina .grupo-2 {
-    background-color: #365b77;
-    padding: 5px 10px;
-    text-align: center;
-    color:var(--blanco);
+background-color: #365b77;
+padding: 5px 10px;
+text-align: center;
+color:var(--blanco);
 }
 
 }
@@ -609,14 +604,13 @@ button:hover {
 }
 .pie-pagina .grupo-1 .box h3 {
     color: var(--negro);
-    margin-bottom: 25px;
-    margin-right: 10px;
-    margin-left: 10%;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 40px;
     font-size: 1rem;
     text-transform: uppercase;
 
 }
-
 .pie-pagina .grupo-1 .box p {
     color: var(--obscuro);
     margin-bottom: 10px;
