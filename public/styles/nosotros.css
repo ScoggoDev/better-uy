@@ -11,29 +11,122 @@ body{
 
 }
 
-.linea-vertical {
-    border-left:  10px solid #021639;
-    height: 109%;
-    position: absolute;
-    left: 90%;
-    margin-left: -4px;
-    top: 0px;
+/* HUD */
+li {
+    list-style: none;
+}
 
+.nav a {
+color: var(--negro);
+text-decoration: none;
+font-size: 1rem;
+}
+
+.nav a:hover {
+    background-color:rgba(10, 110, 189, 0.5);
+    color: var(--negro);
+    border-radius: 0.4rem; 
+    transition: 2000ms ease;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo {
+    width: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.nav .nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav .toggle-btn {
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+    display: none;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(1, 46, 70, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown-menu.open {
+    height: 250px;
+}
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px){
+
+    .dropdown-menu a {
+        color: var(--blanco);
+    }
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
 }
 
 
 /* Pie de pagina y texto de presentacion*/
 
 @media (max-width:  768px) {
-    .linea-vertical {
-        border-left:  10px solid #021639;
-        height: 159%;
-        position: absolute;
-        left: 90%;
-        margin-left: -4px;
-        top: 0px;
-    
+    .dropdown-menu a {
+        color: var(--blanco);
+        margin: 1%;
     }
+
+    .nav .nav-list {
+        display: none;
+    }
+    
+    .nav .logo {
+        width: 10%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+    
+    .nav .toggle-btn {
+        display: block;
+    }
+    
+    .dropdown-menu {
+        display: block;
+    }
+
 .pie-pagina{
             width: 100%;
             background-color: #D5E2F3;
@@ -204,59 +297,6 @@ body{
         color:var(--blanco);
     }
 
-    .presentacion h1 {
-        color: #000000;
-        font-size: 19px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        margin-right: 70%;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .presentacion p {
-        font-size: 90%;
-        color: #21293c;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        margin-right: 80%;
-        text-align: left;
-    }
-    
-    .presentacion h2 {
-        font-size: 19px;
-        color: #000000;
-        margin-top: 80px;
-        margin-bottom: 20px;
-        margin-right: 67%;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
-    .presentacion ul {
-        margin-left: 12%;
-        font-size: 90%;
-    }
-    
-    .presentacion-2 h3 {
-        background-color: #021639;
-        display: flex;
-        justify-content: center;
-        font-size: 19px;
-        font-weight: 700;
-        color: var(--blanco);
-        margin-top: 150px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-    
-    .presentacion-2 p {
-        font-size: large;
-        margin-bottom: 80px;
-        color: #000000;
-        margin-right: 100px;
-        text-align: center;
-    }
-
 /*Cierre pie de pagina */
 
 /*Texto de presentacion */
@@ -274,7 +314,7 @@ body{
     font-size: 90%;
     color: #21293c;
     margin-bottom: 20px;
-    margin-left: 100px;
+    margin-left: 12%;
     margin-right: 40%;
     text-align: left;
 }
@@ -294,17 +334,7 @@ body{
     font-size: 90%;
 }
 
-.presentacion-2 h3 {
-    background-color: #021639;
-    display: flex;
-    justify-content: center;
-    font-size: 19px;
-    font-weight: 700;
-    color: var(--blanco);
-    margin-top: 150px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
+
 
 .presentacion-2 p {
     font-size: large;
@@ -314,11 +344,25 @@ body{
     text-align: center;
 }
 
+.presentacion-2 h3 {
+    background-color: #021639;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--blanco);
+    margin-top: 250px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
 /* imagen sentadillla */
 
+
 .presentacion img {
-    width: 25%;
+    width: 20%;
     height: 25%;
+    margin-bottom: 10px;
     margin-right: 10%;
     align-items: center;
     margin-top: 0%;
@@ -326,6 +370,7 @@ body{
     border-radius: 5%;
 
 }
+
 
 
 

@@ -9,10 +9,13 @@
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/nosotros.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat&display=swap" rel="stylesheet">
@@ -26,22 +29,30 @@
 <!--HUD-->
   
 <header>
-        
-    <img class="logo" src="assets/better.png" alt="Logo">
-    
-    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <div class="nav">
+        <img class="logo" src="assets/better.png" alt="Logo">
 
-    <nav class="nav" id="nav">
-
-        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="catalogue.html">Catálogo</a></li>
             <li><a href="https://wa.me/+59898733277">Contacto</a></li>
         </ul>
-    </nav>
+
+        <div class="toggle-btn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+        </div>
+    </div>
+    <div class="dropdown-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="catalogue.html">Catálogo</a></li>
+        <li><a href="https://wa.me/+59898733277">Contacto</a></li>
+    </div>
 </header>
+    
 
 <!--Presentacion-->
 <div class="presentacion">
@@ -50,9 +61,7 @@
           
                 <img src="assets/nosotros/sentadillas.jpg" alt="imagenes ilustrativas">
     
-        </div>
-        <div class="linea-vertical"></div>
-        
+        </div>        
     
             <p>Bienvenido/a a Better, tu aliado en el camino hacia un estilo de vida activo y saludable en Uruguay. Desde nuestros inicios, nos hemos comprometido a brindar a nuestros clientes los mejores productos de suplementos deportivos, respaldados por la más alta calidad y al mejor precio del mercado.
             Somos una empresa uruguaya apasionada por el deporte y la salud, compuesta por un equipo de profesionales dedicados y conocedores del mundo del fitness. </p>
@@ -78,7 +87,7 @@
 <!-- Pie de pagina-->
    
 <footer class="pie-pagina">
-        <div class="grupo-1">
+    <div class="grupo-1">
         <div class="box">
             <figure>
                 <img src="assets/better.png" alt="logo de better">
@@ -113,6 +122,19 @@
 
     <!-- Java-->
     <script src="functions/burger.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        toggleBtn.onclick = function ( ){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'bi bi-basket3-xmark'
+            :'bi bi-basket3-bars'
+        }
+    </script>
 
 </body>
 </html>

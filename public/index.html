@@ -24,24 +24,33 @@
     
 </head>
 <body>
-    
+<!-- HUD Btn Burger-->
+
     <header>
-        
-        <img class="logo" src="assets/better.png" alt="Logo">
-        
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <div class="nav">
+            <img class="logo" src="assets/better.png" alt="Logo">
 
-        <nav class="nav" id="nav">
-
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="catalogue.html">Catálogo</a></li>
                 <li><a href="https://wa.me/+59898733277">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
+
+            <div class="toggle-btn"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="catalogue.html">Catálogo</a></li>
+            <li><a href="https://wa.me/+59898733277">Contacto</a></li>
+        </div>
+    </header>  
+    
 <!-- Main view, text at left, image on right -->
     <div class="row">
         <div class="col-1">
@@ -175,5 +184,18 @@
     <!-- Main de Js-->
     <script src="functions/slider.js"></script>
     <script src="functions/burger.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        toggleBtn.onclick = function ( ){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'bi bi-basket3-xmark'
+            :'bi bi-basket3-bars'
+        }
+    </script>
 </body>
 </html>

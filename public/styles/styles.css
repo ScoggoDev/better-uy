@@ -302,56 +302,112 @@ button:hover {
 
   /** DISENO MENU HAMBURGUESA y BARRA NAVEGACION **/
 
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 2rem;
-    background-color: #f5f5f5;
-    box-shadow: 0 3px 1px -1px lightgray;
-    z-index: 2;
-
-}
-
-.logo {
-    max-width: 3rem;
-}
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    margin-right:auto;
-    margin-left:auto ;
-}
-
-.nav-list a {              
+    li {
+        list-style: none;
+    }
+    
+    .nav a {
     color: var(--negro);
     text-decoration: none;
-    font-size: 1rem;            /** 1rem 0 10px **/
-    font-weight: 500;
-    padding: 0.7rem 2rem;
-    
-}
+    font-size: 1rem;
+    text-transform: uppercase;
 
-.nav-list li a:hover {          
-    background-color:rgba(10, 110, 189, 0.5);
-    color: var(--negro);
-    border-radius: 0.4rem; 
-    transition: 2000ms ease;
+    }
 
-}
+    .nav a:hover {
+        margin-top: 40%;
+        background-color:rgba(10, 110, 189, 0.5);
+        color: var(--negro);
+        border-radius: 1rem; 
+        transition: 2000ms ease;
+    }
 
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
+    header {
+        position: relative;
+        padding: 0 2rem;
+    }
 
+    .nav {
+        width: 100%;
+        height: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .nav .logo {
+        width: 5%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+
+    .nav .nav-list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav .toggle-btn {
+        font-size: 2rem;
+        color: #000000;
+        cursor: pointer;
+        display: none;
+    }
+
+/* DROPDOWN MENU */
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 300px;
+        background-color: rgba(1, 46, 70, 0.6);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .dropdown-menu.open {
+        height: 250px;
+    }
+    .dropdown-menu li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 @media screen and (max-width: 768px) {
+
+    .dropdown-menu a {
+        color: var(--blanco);
+        margin: 1%;
+    }
+
+    .nav .nav-list {
+        display: none;
+    }
+
+    .nav .logo {
+        width: 10%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+
+    .nav .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
 
     .row {
         flex-direction: column-reverse;
@@ -372,6 +428,7 @@ button:hover {
         transform: translateX(75px);
         width: 80%;
         right: 80px;
+        margin-left: 150px;
         border-top-left-radius:30% ;
         border-bottom-left-radius:30% ;
 
@@ -389,64 +446,23 @@ button:hover {
         font-size: 15px;
     }
 
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .abrir-menu {
-        color: #1c1c1c;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
-        border-bottom-left-radius: 0.4rem;
-        border-bottom-right-radius: 0.4rem;
-        
-        
 }
 
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
+@media screen and (max-width: 576px){
+    .dropdown-menu a {
+        color: var(--blanco);
     }
-    
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-    
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
     }
 }
+ 
 
 /** DISENO FOOTER Y BOTON CATALOGO **/
 @media (max-width:  768px) {
 
-    .catalogue img {
+.catalogue img {
     width: 10px;
     margin-bottom: 10px;
 }
