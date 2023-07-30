@@ -11,12 +11,30 @@ body{
 
 }
 
+.linea-vertical {
+    border-left:  10px solid #021639;
+    height: 109%;
+    position: absolute;
+    left: 90%;
+    margin-left: -4px;
+    top: 0px;
 
-/* Pie de pagina*/
+}
+
+
+/* Pie de pagina y texto de presentacion*/
 
 @media (max-width:  768px) {
+    .linea-vertical {
+        border-left:  10px solid #021639;
+        height: 159%;
+        position: absolute;
+        left: 90%;
+        margin-left: -4px;
+        top: 0px;
     
-    .pie-pagina{
+    }
+.pie-pagina{
             width: 100%;
             background-color: #D5E2F3;
     }
@@ -186,6 +204,59 @@ body{
         color:var(--blanco);
     }
 
+    .presentacion h1 {
+        color: #000000;
+        font-size: 19px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-right: 70%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .presentacion p {
+        font-size: 90%;
+        color: #21293c;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 80%;
+        text-align: left;
+    }
+    
+    .presentacion h2 {
+        font-size: 19px;
+        color: #000000;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-right: 67%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .presentacion ul {
+        margin-left: 12%;
+        font-size: 90%;
+    }
+    
+    .presentacion-2 h3 {
+        background-color: #021639;
+        display: flex;
+        justify-content: center;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--blanco);
+        margin-top: 150px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .presentacion-2 p {
+        font-size: large;
+        margin-bottom: 80px;
+        color: #000000;
+        margin-right: 100px;
+        text-align: center;
+    }
+
 /*Cierre pie de pagina */
 
 /*Texto de presentacion */
@@ -204,13 +275,14 @@ body{
     color: #21293c;
     margin-bottom: 20px;
     margin-left: 100px;
+    margin-right: 40%;
     text-align: left;
 }
 
 .presentacion h2 {
     font-size: 19px;
     color: #000000;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 20px;
     margin-right: 67%;
     text-align: center;
@@ -223,20 +295,37 @@ body{
 }
 
 .presentacion-2 h3 {
-    background-color: #cc0940;
+    background-color: #021639;
     display: flex;
     justify-content: center;
     font-size: 19px;
     font-weight: 700;
     color: var(--blanco);
-    margin-top: 40px;
+    margin-top: 150px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .presentacion-2 p {
     font-size: large;
+    margin-bottom: 80px;
     color: #000000;
     margin-right: 100px;
     text-align: center;
 }
+
+/* imagen sentadillla */
+
+.presentacion img {
+    width: 25%;
+    height: 25%;
+    margin-right: 10%;
+    align-items: center;
+    margin-top: 0%;
+    float: right;
+    border-radius: 5%;
+
+}
+
+
+
