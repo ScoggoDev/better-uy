@@ -274,7 +274,7 @@ body {
     flex-wrap: wrap;
 }
 
-.all-products{
+#all-products{
 	display: flex;
 	align-items: center;
 	justify-content: center;
