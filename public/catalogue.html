@@ -86,95 +86,7 @@
         <h1>
            Nuestros productos 
         </h1>
-        <div id="all-products">
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="assets/productos/nutrilab.png" alt="">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Nutrilab Whey Protein 2.0 1kg
-                    </h4>
-                    <a href="product-btn">
-                        Más información
-                    </a>
-                </div>
-            </div>
+        <div class="all-products" id="productosContainer">
         </div>
     </section>
 
@@ -212,6 +124,223 @@
     </div>
 </footer>
 
-<script src="functions/burger2.js"></script>
+<script>
+    // Ejemplo de datos de productos en formato JSON
+    const productosJSON = [
+      {
+        "id": 1,
+        "name": "Proteína Mr.Músculo",
+        "image": "nutrilab.png", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 1"
+      },
+      {
+        "id": 2,
+        "name": "Creatina",
+        "image": "creatine.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Creatine",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 3,
+        "name": "Papotus Maximus",
+        "image": "proteina.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 4,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 5,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 6,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 7,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 8,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 9,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 10,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 11,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 12,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 13,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 14,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 15,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 16,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 17,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 18,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 19,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 20,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 21,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 22,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 23,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 24,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      {
+        "id": 25,
+        "name": "C4",
+        "image": "c4.jpg", // Cambia el nombre de la imagen aquí
+        "category": "Protein",
+        "description": "Descripción del producto 2"
+      },
+      // ... Agrega los otros productos aquí ...
+    ];
+
+    function mostrarProductos() {
+      const productosContainer = document.getElementById("productosContainer");
+  
+      productosJSON.forEach((producto) => {
+        // Crear los elementos para mostrar el producto
+        const divProduct = document.createElement("div");
+        divProduct.classList.add("product");
+  
+        const imgProduct = document.createElement("img");
+        imgProduct.src = `assets/productos/${producto.image}`; // Agrega la ruta "assets/productos/"
+        imgProduct.alt = producto.name;
+  
+        const divProductInfo = document.createElement("div");
+        divProductInfo.classList.add("product-info");
+  
+        const h4ProductTitle = document.createElement("h4");
+        h4ProductTitle.classList.add("product-title");
+        h4ProductTitle.textContent = producto.name;
+  
+        const aProductBtn = document.createElement("a");
+        aProductBtn.href = "product-btn";
+        aProductBtn.textContent = "Más información";
+  
+        // Agregar los elementos creados al contenedor principal
+        divProductInfo.appendChild(h4ProductTitle);
+        divProductInfo.appendChild(aProductBtn);
+  
+        divProduct.appendChild(imgProduct);
+        divProduct.appendChild(divProductInfo);
+  
+        productosContainer.appendChild(divProduct);
+      });
+    }
+  
+    // Llamar a la función para mostrar los productos cuando se cargue la página
+    window.onload = mostrarProductos;
+  </script>
 </body>
 </html>
