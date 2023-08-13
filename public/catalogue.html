@@ -325,8 +325,18 @@
         h4ProductTitle.textContent = producto.name;
   
         const aProductBtn = document.createElement("a");
-        aProductBtn.href = "product-btn";
+        aProductBtn.href = "#";
+        aProductBtn.id = producto.id;
+        aProductBtn.classList.add("product-btn");
         aProductBtn.textContent = "Más información";
+        // Crear y agregar el evento de clic al botón "Más información"
+        aProductBtn.addEventListener("click", function (event) {
+          event.preventDefault();
+          const productId = producto.id;
+          localStorage.setItem("selectedProduct", JSON.stringify(producto)); // Almacenar el producto seleccionado
+          window.location.href = "products.html";
+        });
+      
   
         // Agregar los elementos creados al contenedor principal
         divProductInfo.appendChild(h4ProductTitle);

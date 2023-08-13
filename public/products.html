@@ -36,7 +36,7 @@
         <div class = "img-select">
           <div class = "img-item">
             <a href = "#" data-id = "3">
-              <img src = "assets/SliderProductos/creatine.jpg" alt = "shoe image">
+              <img id="product-image" src = "assets/SliderProductos/creatine.jpg" alt = "shoe image">
             </a>
           </div>
         </div>
@@ -119,6 +119,37 @@
 
     <!--Java-->
 <script src="functions/burger2.js"></script>
-<script src="products.js"></script>
+<script>
+  function cargarDetalleProducto() {
+    const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
+  
+    if (selectedProduct) {
+      // Aquí debes modificar los elementos del DOM en la página para mostrar la información del producto
+      const productTitle = document.querySelector(".product-title");
+      const productDetail = document.querySelector(".product-detail");
+      const productImage = document.getElementById("product-image"); // Agregar esta línea
+  
+      productTitle.textContent = selectedProduct.name;
+      productDetail.innerHTML = `
+        <h2>Informacion del articulo:</h2>
+        <p>${selectedProduct.description}</p>
+        <ul>
+          <li>Color: <span>${selectedProduct.category}</span></li>
+          <!-- Agrega los otros detalles del producto aquí -->
+        </ul>
+      `;
+  
+      productImage.src = `assets/productos/${selectedProduct.image}`; // Actualizar la imagen
+      productImage.alt = selectedProduct.name; // Actualizar el atributo alt de la imagen
+    } else {
+      // Manejar el caso en que no se encuentra el producto seleccionado
+      // Esto puede ocurrir si alguien intenta acceder directamente a products.html sin seleccionar un producto primero
+      console.error("Producto no encontrado");
+    }
+  }
+  
+  // Llamar a la función para cargar el detalle del producto cuando se cargue la página
+  window.onload = cargarDetalleProducto;
+</script>
 </body>
 </html>
