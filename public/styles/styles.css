@@ -334,10 +334,10 @@ button:hover {
 
 
     .nav .logo {
-        width: 5%;
+        width: 75px;
         font-size: 1.5rem;
         font-weight: bold;
-        margin-top: 1%;
+        margin-top: 25px;
     }
 
     .nav .nav-list {
@@ -378,7 +378,6 @@ button:hover {
     }
 
 @media screen and (max-width: 768px) {
-
     .dropdown-menu a {
         color: var(--blanco);
         margin: 1%;
@@ -386,13 +385,6 @@ button:hover {
 
     .nav .nav-list {
         display: none;
-    }
-
-    .nav .logo {
-        width: 10%;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-top: 1%;
     }
 
     .nav .toggle-btn {
@@ -410,19 +402,11 @@ button:hover {
     }
 
     .col-2 {
-        flex-basis: 100%;
         margin-bottom: 50px;
-    }
-
-    .col-2 .main-image {
-        width: 77%;
-
+        width: 100%;
     }
 
     .color-box {
-        transform: translateX(75px);
-        width: 80%;
-        right: 80px;
         margin-left: 150px;
         border-top-left-radius:30% ;
         border-bottom-left-radius:30% ;
