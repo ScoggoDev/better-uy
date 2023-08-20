@@ -474,84 +474,7 @@ button:hover {
     background-color:rgba(10, 110, 189, 0.8);
 }
 
-.pie-pagina{
-    width: 100%;
-    background-color: #D5E2F3;
-}
-
-
-.pie-pagina .grupo-1 .box figure img {
-width: 6rem;
-height: 6rem;
-margin-right: 6rem;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-color: var(--negro);
-margin-bottom: 25px;
-margin-right: 20px;
-margin-left: 10px;
-font-size: 1rem;
-text-transform: uppercase;
-text-align: center;
-
-}
-.pie-pagina .grupo-1 .box h3 {
-color: var(--negro);
-margin-bottom: 30px;
-margin-right: 0;
-margin-left: 0;
-font-size: 1rem;
-text-transform: uppercase;
-
-}
-
-.pie-pagina .grupo-1 .box p {
-color: var(--obscuro);
-margin-bottom: 10px;
-margin-right:10px;
-font-size: 1rem;
-}
-
-
-.whatsapp {
-display:inline-block;
-text-decoration: none;
-width: 45px;
-height: 45px;
-margin-left: 20px;
-color: var(--negro);
-line-height: 55px;
-background-color: #f5f5f5;
-border-radius: 2rem;
-text-align: center;
-transition: 300ms ease;
-}
-
-.whatsapp:hover{
-color: #00bb2d;
-}
-
-.instagram {
-display:inline-block;
-text-decoration: none;
-width: 45px;
-height: 45px;
-margin-left: 20px;
-color: var(--negro);
-line-height: 55px;
-background-color: #f5f5f5;
-border-radius: 2rem;
-text-align: center;
-transition: 300ms ease;
-
-}
-
-.instagram:hover {
-color: #F85CD4;
-}
-
-.pie-pagina .grupo-2 {
+.grupo-2 {
 background-color: #365b77;
 padding: 5px 10px;
 text-align: center;
@@ -560,107 +483,77 @@ color:var(--blanco);
 
 }/* FINISH MQ*/
 
-.pie-pagina{
+footer {
     width: 100%;
-    background-color:rgba(1, 46, 70, 1);
+    display: block;
+    background-color: #012e46;
+    color: #ffffff;
 }
 
-.pie-pagina .grupo-1 {    
-    width: 100%;
-    max-width: 3000px;
-    margin-left: auto;
+footer > .pie-de-pagina-superior {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-    padding: 1rem 0rem;
+    grid-template-columns: 20% 60% 20%;
+    padding: 25px;
 }
 
-.pie-pagina .grupo-1 .box figure{  
-    width: 2rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+footer > .pie-de-pagina-superior img {
+    margin-left: 25px;
+    margin-top: 25px;
+    max-width: 75px;
 }
 
-.pie-pagina .grupo-1 .box figure img {
-    width: 6rem;
-    height: 3rem;
-    margin-left: 140px;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-    color: var(--blanco);
-    margin-bottom: 25px;
-    margin-right: 10px;
-    margin-left: 0;
-    font-size: 1rem;
-    text-transform: uppercase;
+footer > .pie-de-pagina-superior .about-us {
+    margin: 0 15px;
     text-align: center;
-
 }
-.pie-pagina .grupo-1 .box h3 {
-    color: var(--blanco);
-    margin-bottom: 10px;
-    margin-right: 0;
-    margin-left: 0;
-    font-size: 1rem;
-    text-transform: uppercase;
-
-}
-.pie-pagina .grupo-1 .box p {
-    color: var(--blanco);
-    margin-bottom: 10px;
-    margin-left: 0;
-    font-size: 1rem;
-}
-
-
-.whatsapp {
-    display:inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    margin-left: 1px;
-    color: var(--negro);
-    line-height: 55px;
-    background-color:rgba(1, 46, 70, 1);
-    border-radius: 2rem;
+footer > .pie-de-pagina-superior .social {
     text-align: center;
-    transition: 300ms ease;
 }
 
-.whatsapp:hover{
-    color: #00bb2d;
-}
-
-.instagram {
-    display:inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    margin-left: 1px;
-    color: var(--negro);
-    line-height: 55px;
-    background-color:rgba(1, 46, 70, 1);
-    border-radius: 2rem;
+footer > .pie-de-pagina-superior .social svg {
+    color: black;
     text-align: center;
-    transition: 300ms ease;
-
+    margin-top: 10px;
 }
 
- .instagram:hover {
-    color: #F85CD4;
-}
-
-.pie-pagina .grupo-2 {
+footer .pie-de-pagina-inferior {
+    padding: 10px 60px;
     background-color: #365b77;
-    padding: 5px 10px;
-    text-align: center;
-    color:var(--blanco);
-} 
+    width: 100%;
+    display: block;
+}
 
+@media screen and (max-width: 660px){
+    footer {
+        text-align: center;
+    }
+
+    footer > .pie-de-pagina-superior .about-us {
+        font-size: 15px;
+    }
+
+    footer .pie-de-pagina-superior {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px){
+    footer > .pie-de-pagina-superior {
+        grid-template-columns: auto;
+        padding: 15px;
+        padding-top: 25px;
+    }
+
+    footer > .pie-de-pagina-superior img {
+        margin: 0;
+    }
+
+    footer > .pie-de-pagina-superior .about-us {
+        margin: 15px;
+    }
+
+
+}
 
 /* CIERRA PIE DE PAGINA Y BOTON CATALOGO */
 
