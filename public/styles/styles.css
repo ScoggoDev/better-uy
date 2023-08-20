@@ -109,6 +109,252 @@ body {
     z-index: -1;
 }
 
+/* HEADER */
+
+/** DISENO MENU HAMBURGUESA y BARRA NAVEGACION **/
+header {
+    position: relative;
+    padding: 0.5rem 2rem;
+}
+
+.nav a {
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    margin-top: 40%;
+    background-color: rgba(10, 110, 189, 0.5);
+    color: var(--negro);
+    border-radius: 1rem;
+    transition: 2000ms ease;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo {
+    width: 75px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav .nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav .toggle-btn {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(1, 46, 70, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown-menu.open {
+    height: 250px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav .toggle-btn {
+        font-size: 2rem;
+        color: #000000;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .dropdown-menu a {
+        color: var(--blanco);
+        margin: 1%;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .color-box {
+        margin-left: 150px;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+    .col-1 h2 {
+        font-size: 35px;
+    }
+
+    .col-1 h2 {
+        font-size: 15px;
+    }
+
+    .nav .nav-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dropdown-menu a {
+        color: var(--blanco);
+    }
+
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+/* FIN HEADER */
+/* FOOTER */
+
+footer {
+    width: 100%;
+    display: block;
+    background-color: #012e46;
+    color: #ffffff;
+}
+
+footer>.pie-de-pagina-superior {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 25px;
+}
+
+footer>.pie-de-pagina-superior img {
+    margin-left: 25px;
+    margin-top: 25px;
+    max-width: 75px;
+}
+
+footer>.pie-de-pagina-superior .about-us {
+    margin: 0 15px;
+    text-align: center;
+}
+
+footer>.pie-de-pagina-superior .social {
+    text-align: center;
+}
+
+footer>.pie-de-pagina-superior .social svg {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer .pie-de-pagina-inferior {
+    padding: 10px 60px;
+    background-color: #365b77;
+    width: 100%;
+    display: block;
+}
+
+.whatsapp {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    color: var(--negro);
+    line-height: 55px;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 300ms ease;
+}
+
+.whatsapp:hover {
+    color: #00bb2d;
+}
+
+.instagram {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    color: var(--negro);
+    line-height: 55px;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 300ms ease;
+}
+
+.instagram:hover {
+    color: #f85cd4;
+}
+
+@media screen and (max-width: 660px) {
+    footer {
+        text-align: center;
+    }
+
+    footer>.pie-de-pagina-superior .about-us {
+        font-size: 15px;
+    }
+
+    footer .pie-de-pagina-superior {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    footer>.pie-de-pagina-superior {
+        grid-template-columns: auto;
+        padding: 15px;
+        padding-top: 25px;
+    }
+
+    footer>.pie-de-pagina-superior img {
+        margin: auto;
+    }
+
+    footer>.pie-de-pagina-superior .about-us {
+        margin: 15px;
+    }
+}
+/* FIN FOOTER */
+
 /*BOTON CATALOGO*/
 
 .catalogue img {
@@ -302,149 +548,8 @@ button:hover {
 }
 
 
-  /** DISENO MENU HAMBURGUESA y BARRA NAVEGACION **/
 
-    li {
-        list-style: none;
-    }
-    
-    .nav a {
-    color: var(--negro);
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-
-    }
-
-    .nav a:hover {
-        margin-top: 40%;
-        background-color:rgba(10, 110, 189, 0.5);
-        color: var(--negro);
-        border-radius: 1rem; 
-        transition: 2000ms ease;
-    }
-
-    header {
-        position: relative;
-        padding: 0 2rem;
-    }
-
-    .nav {
-        width: 100%;
-        height: 50px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
-    .nav .logo {
-        width: 75px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-top: 25px;
-    }
-
-    .nav .nav-list {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .nav .toggle-btn {
-        font-size: 2rem;
-        color: #000000;
-        cursor: pointer;
-        display: none;
-    }
-
-/* DROPDOWN MENU */
-    .dropdown-menu{
-        display: none;
-        position: absolute;
-        right: 2rem;
-        top: 60px;
-        height: 0;
-        width: 300px;
-        background-color: rgba(1, 46, 70, 0.6);
-        backdrop-filter: blur(15px);
-        border-radius: 20px;
-        overflow: hidden;
-        z-index: 1;
-    }
-
-    .dropdown-menu.open {
-        height: 250px;
-    }
-    .dropdown-menu li {
-        padding: 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-@media screen and (max-width: 768px) {
-    .dropdown-menu a {
-        color: var(--blanco);
-        margin: 1%;
-    }
-
-    .nav .nav-list {
-        display: none;
-    }
-
-    .nav .toggle-btn {
-        display: block;
-    }
-
-    .dropdown-menu {
-        display: block;
-    }
-
-
-    .row {
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-
-    .col-2 {
-        margin-bottom: 50px;
-        width: 100%;
-    }
-
-    .color-box {
-        margin-left: 150px;
-        border-top-left-radius:30% ;
-        border-bottom-left-radius:30% ;
-
-    }
-
-    .col-1 {
-        flex-basis: 100%;
-    }
-
-    .col-1 h2 {
-        font-size: 35px;
-    }
-
-    .col-1 h2 {
-        font-size: 15px;
-    }
-
-}
-
-@media screen and (max-width: 576px){
-    .dropdown-menu a {
-        color: var(--blanco);
-    }
-    .dropdown-menu {
-        left: 2rem;
-        width: unset;
-    }
-}
- 
-
-/** DISENO FOOTER Y BOTON CATALOGO **/
+/** BOTON CATALOGO **/
 @media (max-width:  768px) {
 
 .catalogue img {
@@ -488,80 +593,7 @@ color:var(--blanco);
 }
 
 }/* FINISH MQ*/
-
-footer {
-    width: 100%;
-    display: block;
-    background-color: #012e46;
-    color: #ffffff;
-}
-
-footer > .pie-de-pagina-superior {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    padding: 25px;
-}
-
-footer > .pie-de-pagina-superior img {
-    margin-left: 25px;
-    margin-top: 25px;
-    max-width: 75px;
-}
-
-footer > .pie-de-pagina-superior .about-us {
-    margin: 0 15px;
-    text-align: center;
-}
-footer > .pie-de-pagina-superior .social {
-    text-align: center;
-}
-
-footer > .pie-de-pagina-superior .social svg {
-    color: black;
-    text-align: center;
-    margin-top: 10px;
-}
-
-footer .pie-de-pagina-inferior {
-    padding: 10px 60px;
-    background-color: #365b77;
-    width: 100%;
-    display: block;
-}
-
-@media screen and (max-width: 660px){
-    footer {
-        text-align: center;
-    }
-
-    footer > .pie-de-pagina-superior .about-us {
-        font-size: 15px;
-    }
-
-    footer .pie-de-pagina-superior {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 540px){
-    footer > .pie-de-pagina-superior {
-        grid-template-columns: auto;
-        padding: 15px;
-        padding-top: 25px;
-    }
-
-    footer > .pie-de-pagina-superior img {
-        margin: 0;
-    }
-
-    footer > .pie-de-pagina-superior .about-us {
-        margin: 15px;
-    }
-
-
-}
-
-/* CIERRA PIE DE PAGINA Y BOTON CATALOGO */
+/* BOTON CATALOGO */
 
 /** Inicio producto destacados **/
 
