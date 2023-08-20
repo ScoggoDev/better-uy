@@ -24,6 +24,11 @@ body {
     /* row-gap: 10px; */
 }
 
+.marcas > .grid-container {
+    margin: auto;
+    max-width: 1200px;;
+}
+
 
 .marcas {
     font-family: 'Kanit', sans-serif;
@@ -598,8 +603,10 @@ footer .pie-de-pagina-inferior {
 }
 
 .slider-frame img {
-	width: 40%;
-    height: 100%;
+    max-width: 150px;
+	width: 100%;
+    height: auto;
+    margin: 0 10px;
 }
 
 @keyframes slide {
